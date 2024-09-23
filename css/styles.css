@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #dde2ec;
+    color: #363636;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+p {
+    line-height: 1.8;
+    text-align: justify;
+}
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 50px;
+    font-style: normal;
+    text-align: center;
+}
+.container {
+    display: block;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header .border {
+    background-color: #ff6800;
+    background-image: url(../img/border-orange.png);
+    height: 27px;
+    width: 100%;
+}
+footer .border {
+    background-image: url(../img/border-pink.png);
+}
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 43px;
+    margin-top: 28px;
+}
+.menu {
+    text-align: right;
+}
+ul.menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 35px;
+}
+ul.menu li a {
+    color: #363636;
+    font-family: "Solway", serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul.menu li #home-icon {
+    position: relative;
+    left: -15px;
+    top: 0;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#banner {
+    background: url(../img/banner-bg.png) no-repeat center bottom;
+    padding-bottom: 200px;
+}
+footer .border {
+    background-color: rgb(235,40,141);
+    background-color: linear-gradient(90deg, rgba(235,40,141,1) 49%, rgba(84,221,242,1) 51%);
+    height: 27px;
+    width: 100%;
+}
+strong {
+    font-weight: 700;
+}
