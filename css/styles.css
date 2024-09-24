@@ -18,6 +18,10 @@ p {
     line-height: 1.8;
     text-align: justify;
 }
+a {
+    color: #003485;
+    text-decoration: none;
+}
 h2 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
