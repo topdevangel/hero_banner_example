@@ -35,6 +35,7 @@ h2 {
 .col-container {
     display: flex;
     flex-direction: row;
+    gap: 0 8%;
 }
 .col-container .col1 {
     flex: 1;
