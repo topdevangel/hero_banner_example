@@ -28,6 +28,9 @@ h2 {
     font-weight: 700;
     font-size: 50px;
     font-style: normal;
+    line-height: 0;
+    margin-top: 0;
+    margin-bottom: 70px;
     text-align: center;
 }
 .container {
@@ -106,6 +109,7 @@ ul.menu li #home-icon {
 #banner {
     background: url(../img/banner-bg.png) no-repeat center bottom;
     padding-bottom: 200px;
+    margin-bottom: -30px;
 }
 footer .border {
     background-color: rgb(235,40,141);
