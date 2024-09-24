@@ -18,7 +18,7 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="manifest" href="site.webmanifest">
+  <!-- link rel="manifest" href="site.webmanifest" -->
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -47,7 +47,7 @@
       <div class="embed-container">
         <!-- iframe width="560" height="315" src="https://www.youtube.com/v/I_WsXtvcqes?autoplay=1&controls=0$rel=0&loop=1mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe -->
-        <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/I_WsXtvcqes?autoplay=1&controls=0&enablejsapi=1" frameborder="0" allowfullscreen allowautoplay></iframe>
+        <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/I_WsXtvcqes?autoplay=1&controls=0&enablejsapi=1&mute=1&loop=1" frameborder="0" allowfullscreen allowautoplay></iframe>
       </div>
     </div>
   </div>
@@ -79,21 +79,42 @@
             <p>
               Commercial, Residential, Interior, Exterior.
             </p>
-            <a href="#service-painting">Learn More</a>
+            <a class="more" href="#service-painting">Learn More</a>
           </div>
           <div class="service-item">
             <h3>Wallcoverings</h3>
             <p>
               papers wallcoverings, vinyl  wallcoverings, textile wallcoverings, acoustical wallcoverings, cork & wood veneers installations.
             </p>
-            <a href="#service-painting">Learn More</a>
+            <a class="more" href="#service-painting">Learn More</a>
           </div>
           <div class="service-item">
             <h3>Wood staining</h3>
             <p>
               Exterior Architectural treatment, Shou-sugi-ban, Interior architectural staining.
             </p>
-            <a href="#service-painting">Learn More</a>
+            <a class="more" href="#service-painting">Learn More</a>
+          </div>
+          <div class="service-item">
+            <h3>Concrete Epoxy Coating</h3>
+            <p>
+              Urethane decorative, Polyurethane, Elastomeric.
+            </p>
+            <a class="more" href="#service-painting">Learn More</a>
+          </div>
+          <div class="service-item">
+            <h3>Specialty Finishes</h3>
+            <p>
+              Venetian plaster, Lime wash painting.
+            </p>
+            <a class="more" href="#service-painting">Learn More</a>
+          </div>
+          <div class="service-item">
+            <h3>Electrostatic Spraying</h3>
+            <p>
+              Onsite spray applications.
+            </p>
+            <a class="more" href="#service-painting">Learn More</a>
           </div>
         </div>
       </div>
@@ -104,12 +125,13 @@
         <p>
           We're here to help with all your painting and wallcovering needs. Contact us today to schedule a consultation or request a quote.
         </p>
-        <form action="">
+        <form id="contact-form" action="">
           <div class="form-group">
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email Address">
-          <input type="text" placeholder="Phone Number">
-          <textarea placeholder="Message"></textarea>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address" style="display: none;">
+            <input type="text" placeholder="Phone Number">
+            <textarea placeholder="Message"></textarea>
+          </div>
           <input type="submit" value="Send">
         </form>
       </div>

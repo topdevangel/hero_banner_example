@@ -33,6 +33,9 @@ h2 {
     margin-bottom: 70px;
     text-align: center;
 }
+section {
+    margin-bottom: 90px;
+}
 .container {
     display: block;
     max-width: 1200px;
@@ -111,6 +114,126 @@ ul.menu li #home-icon {
     padding-bottom: 200px;
     margin-bottom: -30px;
 }
+.service-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-item {
+    background-color: #e8edf8;
+    box-sizing: border-box;
+    box-shadow: 2PX 2PX 5px #c1c6ce;
+    width: 370px;
+    height: 370px;
+    border-radius: 10px;
+    padding: 45px 35px 36px;
+    position: relative;
+    text-align: center;
+}
+.service-item h3 {
+    font-size: 27px;
+}
+.service-item p {
+    text-align: center;
+}
+.service-item .more {
+    bottom: 15px;
+    line-height: 0; 
+    font-size: 0;
+    color: transparent; 
+    position: absolute;
+    right: 15px;
+}
+.service-item .more:after {
+    border-radius: 50%;
+    content: "+";
+    color: #fff;
+    display: inline-block;
+    font-size: 27px;
+    font-weight: 700;
+    height: 47px;
+    line-height: 45px;
+    text-align: center;
+    width: 47px;
+}
+.service-container .service-item:nth-child(1) h3 { color: #ff6800; }
+.service-container .service-item:nth-child(2) h3 { color: #dfa100; }
+.service-container .service-item:nth-child(3) h3 { color: #003485; }
+.service-container .service-item:nth-child(4) h3 { color: #eb288d; }
+.service-container .service-item:nth-child(5) h3 { color: #45bbd4; }
+.service-container .service-item:nth-child(6) h3 { color: #ae6fbb; }
+.service-container .service-item:nth-child(7) h3 { color: #ff6800; }
+.service-container .service-item:nth-child(8) h3 { color: #dfa100; }
+.service-container .service-item:nth-child(9) h3 { color: #003485; }
+
+.service-container .service-item:nth-child(1) .more:after { background: #ff6800; }
+.service-container .service-item:nth-child(2) .more:after { background: #dfa100; }
+.service-container .service-item:nth-child(3) .more:after { background: #003485; }
+.service-container .service-item:nth-child(4) .more:after { background: #eb288d; }
+.service-container .service-item:nth-child(5) .more:after { background: #45bbd4; }
+.service-container .service-item:nth-child(6) .more:after { background: #ae6fbb; }
+.service-container .service-item:nth-child(7) .more:after { background: #ff6800; }
+.service-container .service-item:nth-child(8) .more:after { background: #dfa100; }
+.service-container .service-item:nth-child(9) .more:after { background: #003485; }
+
+.form-group {
+    background-color: #e8edf8;
+    box-shadow: 2PX 2PX 5px #c1c6ce;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+.form-group textarea {
+    min-height: 145px;
+    max-width: 100%;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    border: 1px solid #7f8288;
+    border-width: 1px 0 0 1px;
+    background-color: #d4d9e2;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1;
+    padding: 18px 30px;
+}
+.form-group input[type="text"]:hover,
+.form-group input[type="email"]:hover,
+.form-group textarea:hover {
+    /*background-color: #ced4de;*/
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    background-color: #c0c5cf;
+    outline: none;
+}
+#contact-form input[type="submit"] {
+    background-color: #eb9500;
+    box-shadow: 2PX 2PX 5px #c1c6ce;
+    border: none;
+    border-radius: 10px;
+    color: #363636;
+    font-size: 18px;
+    line-height: 1;
+    padding: 18px 30px;
+}
+#social p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#social ul {
+    display: flex;
+    gap: 0 20px;
+    justify-content: center;
+    list-style: none;
+}
 footer .border {
     background-color: rgb(235,40,141);
     background-color: linear-gradient(90deg, rgba(235,40,141,1) 49%, rgba(84,221,242,1) 51%);
@@ -119,4 +242,13 @@ footer .border {
 }
 strong {
     font-weight: 700;
+}
+
+
+/*queries*/
+@media screen and (max-width: 1270px ){
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
