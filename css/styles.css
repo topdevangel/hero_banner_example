@@ -87,7 +87,7 @@ header > .container {
 ul.menu li {
     display: inline-block;
     list-style: none;
-    margin: 0 35px;
+    margin: 0;
 }
 ul.menu li a {
     color: #363636;
@@ -99,33 +99,65 @@ ul.menu li a {
     text-transform: uppercase;
 }
 
-
-
-
-ul.menu li a {
-    transition: 0.4s;
+  ul.menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0;
     position: relative;
+    display: inline-block;
   }
+  
+  ul.menu li a:before,
   ul.menu li a:after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: #eb9500;
-    bottom: 0;
+    display: block;
+    border: 0px solid transparent;
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease;
+  }
+  
+  ul.menu li a:after {
+    top: 0;
     left: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.4s;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
   }
+  
+  ul.menu li a:before {
+    right: 0;
+    bottom: 0;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+  }
+  
+  ul.menu li a:hover:before,
   ul.menu li a:hover:after {
-    transform: scaleX(1);
-    transform-origin: left;
+    width: 10px;
+    height: 10px;
+    border-color: #fe7800;
+  }
+  ul.menu li a:hover:before {
+    border-color: #ea4eb1;
   }
 
+ul.menu li a:hover span {
+    color: #003485;
+}
+  ul.menu li a span:after {
+    /*content: "";*/
+    background-color: #dfa100;
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    width: 0;
+  }
+  ul.menu li a:hover span:after {
+    width: 50%;
 
-
-
+  }
 ul.menu li #home-icon {
     position: relative;
     left: -15px;
@@ -148,6 +180,9 @@ ul.menu li #home-icon {
     left: 0;
     width: 100%;
     height: 100%;
+}
+.embed-container:before {
+    content: "";
 }
 #banner {
     background: url(../img/banner-bg.png) no-repeat center bottom;
@@ -267,9 +302,27 @@ ul.menu li #home-icon {
     display: inline-block;
     font-size: 18px;
     line-height: 1;
-    padding: 18px 30px;
+    padding: 18px 0 18px 0;
+    position: relative;
     text-align: center;
     width: 222px;
+    transition: 0.3s all ease;
+}
+#contact-form input[type="submit"]:hover {
+    transition: 0.3s all ease;
+    padding-right: 20px;
+}
+#contact-form input[type="submit"]:after {
+    content: ">>";
+    color: #000;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s all ease;
+}
+#contact-form input[type="submit"]:hover:after {
+    
 }
 #social p {
     font-size: 22px;
@@ -303,6 +356,6 @@ strong {
 @media screen and (max-width: 1000px){
     ul.menu li {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
