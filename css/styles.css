@@ -218,6 +218,14 @@ ul.menu li #home-icon {
     top: 0;
 }
 /* service hover animations */
+.service-item {
+    top: 0;
+    transition: 0.2s all ease;
+}
+.service-item:hover {
+    top: 8px;
+    transition: 0.2s all ease;
+}
 .service-item h3 {
     font-size: 27px;
     position: relative;
@@ -226,7 +234,8 @@ ul.menu li #home-icon {
 }
 .service-item:hover h3 {
     position: relative;
-    top: 8px;
+    top: -8px;
+    transform: scale(1.1);
     transition: 0.2s all ease;
 }
 .service-item .description {
@@ -236,7 +245,7 @@ ul.menu li #home-icon {
 }
 .service-item:hover .description {
     position: relative;
-    top: -8px;
+    /*top: -8px;*/
     transition: 0.2s all ease;
 }
 .service-item .more {
@@ -244,7 +253,7 @@ ul.menu li #home-icon {
     transition: 0.2s all ease;
 }
 .service-item:hover .more {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: 0.2s all ease;
 }
 /* -- */
