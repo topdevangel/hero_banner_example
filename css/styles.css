@@ -23,6 +23,21 @@ a {
     color: #003485;
     text-decoration: none;
 }
+#banner h1 {
+    color: #fff;
+    left: 10px;
+    position: absolute;
+    /*top: 50%;
+    transform: translateY(-50%);*/
+    top: 30%;
+    z-index: 1;
+}
+#banner h1 span {
+    font-weight: 100;
+}
+h1 {
+    font-size: 65px;
+}
 h2 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -219,41 +234,14 @@ ul.menu li #home-icon {
 }
 /* service hover animations */
 .service-item {
+    left: 0;
     top: 0;
-    transition: 0.2s all ease;
+    transition: 0.8s all ease;
 }
 .service-item:hover {
-    top: 8px;
-    transition: 0.2s all ease;
-}
-.service-item h3 {
-    font-size: 27px;
-    position: relative;
-    top: 0;
-    transition: 0.2s all ease;
-}
-.service-item:hover h3 {
-    position: relative;
-    top: -8px;
-    transform: scale(1.1);
-    transition: 0.2s all ease;
-}
-.service-item .description {
-    position: relative;
-    top: 0;
-    transition: 0.2s all ease;
-}
-.service-item:hover .description {
-    position: relative;
-    /*top: -8px;*/
-    transition: 0.2s all ease;
-}
-.service-item .more {
-    transform: scale(1);
-    transition: 0.2s all ease;
-}
-.service-item:hover .more {
-    transform: scale(1.2);
+    box-shadow: 10PX 10PX 15px #959ca7;
+    left: -10px;
+    top: -10px;
     transition: 0.2s all ease;
 }
 /* -- */
@@ -320,10 +308,17 @@ ul.menu li #home-icon {
     position: relative;
 }
 #whatsapp-link {
-    right: 0;
+    background: url(../img/icon-wa-double.png) no-repeat center top;
+    display: block;
+    height: 53px;
     position: absolute;
+    right: 0;
     top: 50%;
+    width: 54px;
     transform: translateY(-50%);
+}
+#whatsapp-link:hover {
+    background-position: center bottom;
 }
 .form-group {
     background-color: #e8edf8;
@@ -396,6 +391,12 @@ ul.menu li #home-icon {
 #contact-form input[type="submit"]:hover:after {
     
 }
+#social {
+    position: relative;
+}
+#social > .container {
+    position: relative;
+}
 #social p {
     font-size: 22px;
     margin-bottom: 40px;
@@ -406,6 +407,19 @@ ul.menu li #home-icon {
     gap: 0 20px;
     justify-content: center;
     list-style: none;
+}
+#social #top {
+    background: url(../img/icon-top-double.png) no-repeat center top;
+    display: block;
+    height: 47px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 47px;
+    transform: translateY(-50%);
+}
+#social #top:hover {
+    background-position: center bottom;
 }
 footer .border {
     background-color: rgb(235,40,141);
@@ -424,10 +438,36 @@ strong {
         padding-left: 20px;
         padding-right: 20px;
     }
+    #banner h1 {
+        font-size: 5vw;
+    }
 }
 @media screen and (max-width: 1000px){
     ul.menu li {
         display: block;
         margin-bottom: 10px;
     }
+}
+@media screen and (max-width: 940px){
+    .service-item {
+        height: auto;
+        min-height: 250px;
+        width: 40%;
+    }
+    .service-item h3 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 720px){
+    h2 {
+        font-size: 34px;
+    }
+    .service-item {
+        width: 100%;
+    }
+    .service-item h3 {
+        margin: 0 0 25px;
+    }
+}
+@media screen and (max-width: 480px){
 }
